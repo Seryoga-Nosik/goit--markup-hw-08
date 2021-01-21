@@ -1,0 +1,25 @@
+.clients {
+  &-list {
+    display: flex;
+    justify-content: space-between;
+
+    &-link {
+      @include centered();
+      color: var(--icons-color);
+      width: 170px;
+      height: 90px;
+      border: 1px solid;
+      border-radius: 4px;
+      transition: color var(--transition-function);
+
+      &:hover,
+      &:focus {
+        color: var(--accent-color);
+      }
+    }
+  }
+
+  &-logo {
+    fill: currentColor;
+  }
+}

@@ -1,0 +1,47 @@
+// /* Основной шрифт страницы font-family: 'Roboto', sans-serif; */
+// /* Вторичный шрифт страницы font-family: 'Raleway', sans-serif; */
+// /* Цвет акцента #2196F3 */
+// /* Основной цвет текста #757575 */
+// /* Вторичный цвет текста  #212121 */
+// /* Белый цвет текста #FFFFFF */
+// /* Черный цвет текста #000000 */
+// /* Цвет текста в футере rgba(255, 255, 255, 0.6) */
+// /* Основной фоновый цвет #FFFFFF */
+// /* Вторичный фоновый цвет #F5F4FA */
+// /* Фоновый цвет Hero #C4C4C4 */
+// /* Фоновый цвет Product rgba(47, 48, 58, 0.8) */
+// /* Фоновый цвет футера #2F303A */
+// /* Фоновый цвет бэкдропа rgba(0, 0, 0, 0.2) */
+// /* Фоновый цвет оверлея rgba(33, 150, 243, 0.9) */
+// /* Цвет бордера хєдера #ECECEC*/
+// /* Цвет бордера инпут в форме футера rgba(255, 255, 255, 0.3) */
+// /* Цвет бордера инпут в форме модального окна rgba(33, 33, 33, 0.2) */
+// /* Цвет бордера карточек #EEEEEE */
+// /* Цвет иконок #AFB1B8 */
+// /* Цвет иконок в футере rgba(255, 255, 255, 0.1) */
+// /* Функция перехода 250ms cubic-bezier(0.4, 0, 0.2, 1) */
+
+:root {
+  --primary-page-font: 'Roboto', sans-serif;
+  --secondary-page-font: 'Raleway', sans-serif;
+  --accent-color: #2196f3;
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --white-text-color: #ffffff;
+  --black-text-color: #000000;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --hero-background-color: #c4c4c4;
+  --product-background-color: rgba(47, 48, 58, 0.8);
+  --footer-background-color: #2f303a;
+  --backdrop-backgraund-color: rgba(0, 0, 0, 0.2);
+  --overlay-background-color: rgba(33, 150, 243, 0.9);
+  --header-border-color: #ececec;
+  --footer-input-border-color: rgba(255, 255, 255, 0.3);
+  --modal-input-border-color: rgba(33, 33, 33, 0.2);
+  --cards-border-color: #eeeeee;
+  --icons-color: #afb1b8;
+  --footer-icons-color: rgba(255, 255, 255, 0.1);
+  --transition-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

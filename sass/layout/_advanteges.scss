@@ -1,0 +1,30 @@
+.advanteges {
+  &-list {
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+      width: 270px;
+    }
+  }
+
+  &-icon-wrapper {
+    height: 120px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    background-color: var(--secondary-background-color);
+    border-radius: 4px;
+  }
+
+  &-title {
+    margin-bottom: 10px;
+    @include font(700, 14px, 1.143, 0.03em);
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+  }
+
+  &-text {
+    min-height: 75px;
+    @include font(400, 14px, 1.714, 0.03em);
+  }
+}

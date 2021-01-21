@@ -1,0 +1,27 @@
+.product {
+  padding-top: 0;
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+
+    &-wrapper {
+      position: relative;
+    }
+  }
+
+  &-title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+    height: 70px;
+    @include font(700, 14px, 1.142, 0.03em);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+    background-color: var(--product-background-color);
+  }
+}

@@ -1,0 +1,13 @@
+.logo {
+  font-family: var(--secondary-page-font);
+  @include font(700, 26px, 1.192, 0.03em);
+  color: var(--accent-color);
+
+  &-header {
+    color: var(--black-text-color);
+  }
+
+  &-footer {
+    color: var(--white-text-color);
+  }
+}

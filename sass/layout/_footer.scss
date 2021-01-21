@@ -1,0 +1,118 @@
+.footer {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  background-color: var(--footer-background-color);
+
+  &-contact-section {
+    margin-right: 70px;
+  }
+
+  & .container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  & .logo {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &-title {
+    margin-bottom: 20px;
+    @include font(700, 14px, 1.142, 0.03em);
+    text-transform: uppercase;
+    color: var(--white-text-color);
+  }
+
+  &-social-section {
+    margin-right: 93px;
+  }
+
+  &-social-list {
+    display: flex;
+
+    &-item:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  & .social-list-link {
+    color: var(--white-text-color);
+    background-color: var(--footer-icons-color);
+    transition: background-color var(--transition-function);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+
+  & .social-list-icon {
+    fill: currentColor;
+  }
+}
+
+.contact {
+  &-list {
+    width: 231px;
+    @include font(400, 14px, 1.714, 0.03em);
+
+    &-item:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+
+  &-address,
+  &-link {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: var(--footer-text-color);
+  }
+
+  &-address {
+    color: var(--white-text-color);
+  }
+}
+
+.subscription-form {
+  &-field {
+    display: block;
+  }
+
+  &-input {
+    padding-left: 16px;
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid var(--footer-input-border-color);
+    border-radius: 4px;
+    background-color: transparent;
+    @include font(400, 16px, 1.25, 0.03em);
+    color: var(--white-text-color);
+    transition: border-color var(--transition-function);
+
+    &-wrapper {
+      display: flex;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: var(--accent-color);
+    }
+
+    &::placeholder {
+      color: var(--footer-text-color);
+    }
+  }
+
+  &-btn {
+    @include centered();
+
+    &-icon {
+      margin-left: 10px;
+      fill: currentColor;
+    }
+  }
+}
