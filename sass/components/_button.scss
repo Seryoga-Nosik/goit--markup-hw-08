@@ -8,4 +8,9 @@
   background-color: var(--accent-color);
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: all var(--transition-function);
+}
+
+.button:hover.animate {
+  transform: scale(1.1);
 }

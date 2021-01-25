@@ -1,16 +1,7 @@
 .advanteges {
-  &-list {
-    display: flex;
-    justify-content: space-between;
-
-    &-item {
-      width: 270px;
-    }
-  }
-
   &-icon-wrapper {
+    @include centered();
     height: 120px;
-    padding: 25px 100px;
     margin-bottom: 30px;
     background-color: var(--secondary-background-color);
     border-radius: 4px;
@@ -21,10 +12,49 @@
     @include font(700, 14px, 1.143, 0.03em);
     text-transform: uppercase;
     color: var(--secondary-text-color);
+    text-align: center;
   }
 
   &-text {
-    min-height: 75px;
+    min-height: 50px;
     @include font(400, 14px, 1.714, 0.03em);
+  }
+
+  @media screen and (max-width: 767px) {
+    &-list-item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &-item {
+        max-width: 354px;
+      }
+    }
+
+    &-title {
+      text-align: left;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &-list-item:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &-list-item {
+      max-width: 270px;
+    }
+
+    &-text {
+      min-height: 75px;
+    }
   }
 }
